@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="script.js"></script>
     <title>Todo List</title>
   </head>
-  <body class="">
-    <h1 class="text-center">Hello World!</h1>
+  <body class="max-w-screen-sm mx-auto flex flex-col justify-center">
+    <div id="items">
+      <div class="item">
+        <input type="checkbox" class="item-completed" />
+        <input
+          class="item-description p-2 font-semibold rounded-lg"
+          type="text"
+          placeholder="Todo"
+        />
+      </div>
+    </div>
+    <button
+      class="shadow rounded-lg bg-green-400 border border-green-700 p-2 text-gray-700"
+      id="add"
+    >
+      Add Item
+    </button>
   </body>
 </html>
